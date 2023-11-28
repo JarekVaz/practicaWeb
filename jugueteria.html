@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="juguetes.css">
+    <title>Inicio </title>
+</head>
+<body>
+ 
+    <h1>Jugueteria.</h1> <!-- Agrega este encabezado -->
+ 
+    <div class="prev-button">&lt;</div>
+ <div class="content">
+ 
+    <div class="product" id="product1">
+        <img src="imagenes/halonerf.jpg" alt="halonerf" class="product-img">
+        <div class="product-text">
+            Rifle de Halo<br>Marca Nerf
+            <br>
+            <span class="price">$599 MXN</span>
+            <br>
+
+            <select id="quantity1" name="quantity1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+
+            <button onclick="agregarAlCarrito('product1')">Agregar al Carrito</button>
+        </div>
+    </div>
+ 
+    <div class="product" id="product2">
+        <img src="imagenes/series.jpg" alt="series" class="product-img">
+        <div class="product-text">
+            Consola Xbox serie S<br>Marca Xbox
+            <br>
+            <span class="price">$4500 MXN</span>
+            <br>
+
+            <select id="quantity2" name="quantity2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+            <button onclick="agregarAlCarrito('product2')">Agregar al Carrito</button>
+        </div>
+    </div>
+ 
+    <div class="product" id="product3">
+        <img src="imagenes/barbie.jpg" alt="barbie" class="product-img">
+        <div class="product-text">
+            Muñeca barbie
+            <br>
+            <span class="price">$600 MXN</span>
+            <br>
+
+            <select id="quantity3" name="quantity3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+            <button onclick="agregarAlCarrito('product3')">Agregar al Carrito</button>
+        </div>
+    </div>
+ 
+    <div class="product" id="product4">
+        <img src="imagenes/81Nt2mvqqwL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="futball" class="product-img">
+        <div class="product-text">
+            Pelota de futbol<br>Generico
+            <br>
+            <span class="price">$50 MXN</span>
+            <br>
+
+            <select id="quantity4" name="quantity4">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+            <button onclick="agregarAlCarrito('product4')">Agregar al Carrito</button>
+        </div>
+    </div>
+
+    
+
+    <div class="carr">
+        <h2>Carrito de Compras</h2>
+        <ul id="carrito"></ul>
+        <p>Total: $<span id="total">0.00</span></p>
+        <button onclick="pagar()" class="cart-button">Pagar</button>
+    </div>
+   
+    <script src="juguetes.js"></script>
+</body>
+</html>

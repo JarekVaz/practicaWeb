@@ -1,0 +1,105 @@
+body{
+    height: 100vh;
+}
+
+
+h1 {
+    font-family: Didot, "Didot LT STD", serif;
+    color: rgb(164, 5, 5);
+    font-size: 45px;
+    text-align: center;
+    flex-grow: 1;
+}
+  
+.product {
+    display: inline-block;
+    text-align: left;
+    width: 25%; /* 4 productos en una fila, ocupando el 25% del contenedor */
+    margin-right: 1%; /* Agrega margen entre los productos */
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-right: 1%; /* Agrega margen entre los productos */
+}
+ 
+.product:last-child {
+    margin-right: 0;
+}
+ 
+.prev-button,
+ 
+ 
+.prev-button {
+    left: 0;
+}
+ 
+.next-button {
+    right: 0;
+}
+ 
+ 
+ 
+/* Estilo para el contenedor de productos */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff; /* Cambia el color de fondo según tus preferencias */
+}
+ 
+/* Estilo para cada producto */
+.product {
+    text-align: center;
+}
+ 
+.product-img {
+    width: 300px;
+    height: 310px;
+    margin-bottom: 10px;
+}
+ 
+.product-text {
+    font-size: 18px;
+    color: #333; /* Cambia el color del texto según tus preferencias */
+    font-family: 'Times New Roman', Times, serif;
+}
+ 
+.price {
+    color: #421b75; /* Color dorado */
+    font-weight: bold;
+}
+ 
+ 
+/* Estilo para los botones "Comprar" y "Agregar al carrito" */
+.buy-button,
+.cart-button {
+    background-color: #0ba7bc; /* Color dorado */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+   
+    margin-top: 10px;
+}
+ 
+.product-text a,
+.product-text button {
+    text-decoration: none;
+}
+ 
+.cart-button {
+    margin-left: 10px;
+}
+
+
+/********************************************/
+
+.carr{
+
+    position: fixed;
+
+    top: 500px;
+    height: 0px;
+
+
+}
